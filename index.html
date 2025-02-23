@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Page Title (D)</title>
+<style>
+.iframe-container {
+position: relative;
+width: 100%;
+height: 3000px;
+margin: 0 auto;
+overflow: hidden;
+border: none;
+}
+
+iframe {
+width: 100%;
+height: 100%;
+border: none;
+display: block;
+}
+
+/* Invisible clickable layer */
+.click-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: transparent;
+cursor: pointer;
+z-index: 10;
+}
+</style>
+</head>
+<body>
+
+<div class='iframe-container'>
+<!-- Clickable transparent overlay -->
+<a href='Target URL (C)' class='click-overlay'></a>
+
+<!-- Embedded iframe -->
+<iframe
+src='Iframe URL (B)'
+scrolling='no'>
+</iframe>
+</div>
+
+</body>
+</html>
